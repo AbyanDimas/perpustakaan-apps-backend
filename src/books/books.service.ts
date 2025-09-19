@@ -1,4 +1,4 @@
-import { prisma } from '../lib/prisma';
+import { prisma } from '@/lib/prisma';
 import { getFullUrl } from '@/lib/utils';
 import fs from 'fs';
 import path from 'path';

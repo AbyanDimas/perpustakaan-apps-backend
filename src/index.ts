@@ -4,18 +4,17 @@ import dotenv from 'dotenv';
 import helmet from 'helmet';
 import path from 'path';
 
-import { prisma } from './lib/prisma';
-import { limiter } from './middleware/rateLimiter';
-import { trackVisitor } from './middleware/visitorTracking';
+import { prisma } from '@/lib/prisma';
+import { limiter } from '@/middleware/rateLimiter';
+import { trackVisitor } from '@/middleware/visitorTracking';
 
-import analyticsRouter from './analytics/analytics.router';
-import booksRouter from './books/books.router';
-import genresRouter from './genres/genres.router';
-import languagesRouter from './languages/languages.router';
-import logsRouter from './logs/logs.router';
-import sseRouter from './sse/sse.router';
-import statsRouter from './stats/stats.router';
-
+import analyticsRouter from '@/analytics/analytics.router';
+import booksRouter from '@/books/books.router';
+import genresRouter from '@/genres/genres.router';
+import languagesRouter from '@/languages/languages.router';
+import logsRouter from '@/logs/logs.router';
+import sseRouter from '@/sse/sse.router';
+import statsRouter from '@/stats/stats.router';
 import serverInfoRouter from '@/serverinfo/serverinfo.router';
 
 dotenv.config();
