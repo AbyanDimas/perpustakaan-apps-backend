@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma';
+import { prisma } from '../lib/prisma';
 
 export const getLogs = async () => {
   return await prisma.log.findMany({

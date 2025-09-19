@@ -1,6 +1,6 @@
 // src/serverinfo/serverinfo.router.ts
 import { Router, Request, Response } from 'express';
-import { getServerIp } from '@/serverinfo/serverinfo.service';
+import { getServerIp } from './serverinfo.service';
 
 const router = Router();
 
