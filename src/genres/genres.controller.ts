@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { getGenres } from './genres.service';
+import { getGenres } from '@/genres/genres.service';
 
 export const genresController = async (req: Request, res: Response) => {
   try {

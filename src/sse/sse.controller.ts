@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { addClient, removeClient } from './sse.service';
+import { addClient, removeClient } from '@/sse/sse.service';
 
 export const sseController = (req: Request, res: Response) => {
   res.setHeader('Content-Type', 'text/event-stream');

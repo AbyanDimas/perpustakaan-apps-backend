@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { sseController } from './sse.controller';
+import { sseController } from '@/sse/sse.controller';
 
 const router = Router();
 

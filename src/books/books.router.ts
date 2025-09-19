@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { getBooksController, createBookController, updateBookController, deleteBookController } from './books.controller';
-import { upload } from '../middleware/upload';
+import { upload } from '@/middleware/upload';
 
 const router = Router();
 

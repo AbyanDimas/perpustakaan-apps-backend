@@ -16,7 +16,7 @@ import logsRouter from './logs/logs.router';
 import sseRouter from './sse/sse.router';
 import statsRouter from './stats/stats.router';
 
-import serverInfoRouter from './serverinfo/serverinfo.router';
+import serverInfoRouter from '@/serverinfo/serverinfo.router';
 
 dotenv.config();
 

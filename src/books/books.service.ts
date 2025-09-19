@@ -1,5 +1,5 @@
 import { prisma } from '../lib/prisma';
-import { getFullUrl } from '../lib/utils';
+import { getFullUrl } from '@/lib/utils';
 import fs from 'fs';
 import path from 'path';
 import cache from 'memory-cache';

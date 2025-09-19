@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { getLanguages } from './languages.service';
+import { getLanguages } from '@/languages/languages.service';
 
 export const languagesController = async (req: Request, res: Response) => {
   try {

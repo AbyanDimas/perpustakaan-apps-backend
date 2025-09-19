@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { getBooks, createBook, updateBook, deleteBook } from './books.service';
-import { sendEventToClients } from '../sse/sse.service';
+import { sendEventToClients } from '@/sse/sse.service';
 import cache from 'memory-cache';
 
 export const getBooksController = async (req: Request, res: Response) => {
