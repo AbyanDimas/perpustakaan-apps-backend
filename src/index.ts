@@ -16,6 +16,8 @@ import logsRouter from './logs/logs.router';
 import sseRouter from './sse/sse.router';
 import statsRouter from './stats/stats.router';
 
+import serverInfoRouter from './serverinfo/serverinfo.router';
+
 dotenv.config();
 
 const app = express();
@@ -38,6 +40,8 @@ app.use('/api/languages', languagesRouter);
 app.use('/api/logs', logsRouter);
 app.use('/api/sse', sseRouter);
 app.use('/api/stats', statsRouter);
+
+app.use('/api/serverinfo', serverInfoRouter);
 
 app.get('/api/health', async (req, res) => {
   try {
